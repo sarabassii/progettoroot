@@ -94,7 +94,7 @@ double massMot = GetMassI();
   double massDau1 = dau1.GetMassI();
   double massDau2 = dau2.GetMassI();
 
-  if(fIParticle > -1){ // add width effect
+  if(fIndex > -1){ // add width effect
 
     // gaussian random numbers
 
@@ -110,7 +110,7 @@ double massMot = GetMassI();
     w = sqrt( (-2.0 * log( w ) ) / w );
     y1 = x1 * w;
 
-    massMot += fParticleType[fIParticle]->GetWidth() * y1;
+    massMot += fParticleType[fIndex]->GetWidth() * y1;
 
   }
    if(massMot < massDau1 + massDau2){
@@ -154,3 +154,4 @@ void Particle::Boost(double bx, double by, double bz)
   fPy += gamma2*bp*by + gamma*by*energy;
   fPz += gamma2*bp*bz + gamma*bz*energy;
 }
+

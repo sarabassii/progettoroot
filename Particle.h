@@ -21,12 +21,13 @@ class Particle {
   double GetPz() const;
   double GetMassI() const;
   double GetEnergy() const;
+
   double InvMass(const Particle& particle) const;
   void SetP(double px, double py, double pz) {
     fPx = px;
     fPy = py;
     fPz = pz;
-  }nonononononononon
+  }
    int Decay2body(Particle &dau1,Particle &dau2) const;
 
  private:
