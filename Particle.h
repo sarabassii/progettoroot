@@ -27,6 +27,7 @@ class Particle {
     fPy = py;
     fPz = pz;
   }
+   int Decay2body(Particle &dau1,Particle &dau2) const;
 
  private:
   static const int fMaxNumParticleType = 10;
@@ -38,6 +39,7 @@ class Particle {
   double fPy;
   double fPz;
   static int FindParticle(const char* Name);
+  void Boost(double bx, double by, double bz);
 };
 
 #endif
