@@ -109,7 +109,7 @@ double massMot = GetMassI();
     
     w = sqrt( (-2.0 * log( w ) ) / w );
     y1 = x1 * w;
-nonononononononononn
+
     massMot += fParticleType[fIParticle]->GetWidth() * y1;
 
   }

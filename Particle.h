@@ -26,7 +26,7 @@ class Particle {
     fPx = px;
     fPy = py;
     fPz = pz;
-  }
+  }nonononononononon
    int Decay2body(Particle &dau1,Particle &dau2) const;
 
  private:
